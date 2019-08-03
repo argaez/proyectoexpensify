@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Expenses</title>
+    <%= csrf_meta_tags %>
+    <%= action_cable_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Expensify</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="<%= 'active' if @tab == :dashboard %>"><%= link_to "Dashboard", root_path %></li>
+            <li class="<%= 'active' if @tab == :expenses %>"><%= link_to "Expenses", expenses_path %></li>
+          </ul>
+           <!-- ul menu to the right -->
+          <ul class="nav navbar-nav navbar-right">
+            <!-- links for devise use -->
+            <li class="active">
+              <%= link_to  "Registrarse", new_user_registration_path %>
+            </li>
+            <li>
+              <% if user_signed_in? %>
+              <%= link_to  "Salir",  destroy_user_session_path, method: :delete %>            
+                <% else %>
+                 <%= link_to  "Ingresar", new_user_session_path %>          
+              <% end %>
+            </li>
+            <!-- /. links for devise use -->
+          </ul>
+           <!-- ul to the right -->
+        </div>
+      </div>
+    </nav>
+
+    <% if user_signed_in? %>
+    <div>
+      <p>Hola <%=  current_user.email %></p>
+    </div>
+    <% end %>
+
+    <!-- Flash error messages for devise -->
+    <% flash.each do |key, value| %>
+     <div class="alerta">
+       <div class="<%= flash_class(key) %>">
+         <%= value %>
+       </div>
+      <% end %>
+     </div>
+     <!-- / Flash error messages for devise -->
+     
+    <%= yield %>
+
+    <script>
+     $(".alert").fadeIn(200).css("opacity", "0.85").delay(2000).slideUp(1000);
+     $(".alerta").on('click', '.alert', function () { $(this).remove() })
+    </script> 
+
+  </body>
+</html>
