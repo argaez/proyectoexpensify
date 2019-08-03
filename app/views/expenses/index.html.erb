@@ -10,12 +10,13 @@
 
       <h4 class="filter-header">Categoría <span>Selecciona para filtrar</span></h4>
       <div class="list-group filter-type">
-        <a href="#" class="list-group-item">Restaurants</a>
-        <a href="#" class="list-group-item">Car</a>
+          <% @categories.each do |category| %>
+          <a href="#" class="list-group-item"><%= category.name %></a> 
+          <% end %>
         <!-- more categories  -->
       </div>
       <!-- <a href="#" class="btn btn-success pull-left"><span class="glyphicon glyphicon-plus"></span> Nueva Categoría</a> -->
-      <%= link_to  "New Category", new_category_path, remote: true, class:"btn btn-success pull-left glyphicon glyphicon-plus" %>
+      <%= link_to  "Nueva Categoría", categories_path, class:"btn btn-success pull-left glyphicon glyphicon-plus" %>
     </div>
     <div class="col-md-9 index-data">
       <div class="row" style="margin-top: 10px;">
