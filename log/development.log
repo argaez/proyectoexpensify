@@ -4482,3 +4482,339 @@ Processing by ExpensesController#new as JS
 Completed 200 OK in 35ms (Views: 25.8ms | ActiveRecord: 0.5ms)
 
 
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateExpenses (20190727202917)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.8ms)[0m  [1m[35mDROP TABLE "expenses"[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20190727202917"]]
+  [1m[35m (90.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.5ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateExpenses (20190727202917)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "expenses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" date, "amounth" decimal, "concept" varchar, "type_id" integer, "category_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mselect sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE  INDEX "index_expenses_on_type_id" ON "expenses" ("type_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_expenses_on_type_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_expenses_on_type_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "index_expenses_on_category_id" ON "expenses" ("category_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_expenses_on_category_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_expenses_on_category_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_expenses_on_type_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_expenses_on_type_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "index_expenses_on_user_id" ON "expenses" ("user_id")[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190727202917"]]
+  [1m[35m (169.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_expenses_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_expenses_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_expenses_on_category_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_expenses_on_category_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_expenses_on_type_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_expenses_on_type_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+Started GET "/expenses" for 127.0.0.1 at 2019-08-10 16:47:18 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered expenses/index.html.erb within layouts/application (41.3ms)
+Completed 200 OK in 723ms (Views: 699.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 16:47:20 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  [1m[36mType Load (0.4ms)[0m  [1m[34mSELECT "types".* FROM "types" ORDER BY "types"."name" ASC[0m
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" ORDER BY "categories"."name" ASC[0m
+  Rendered expenses/_form.html.erb (203.3ms)
+  Rendered expenses/new.js.erb (211.3ms)
+Completed 500 Internal Server Error in 243ms (ActiveRecord: 3.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `amount' for #<Expense:0x00007f1d8801d2e8>
+Did you mean?  amounth
+               amounth?
+               amounth=):
+    43:             <div class="col-sm-6">
+    44:               <div class="form-group">
+    45:                 <%= f.label :Amounth %>
+    46:                 <%= f.text_field :amount,  class: "form-control", placeholder: "Ingrese el monto del gasto" %>
+    47:               </div>
+    48:             </div>
+    49:           </div>
+  
+app/views/expenses/_form.html.erb:46:in `block in _app_views_expenses__form_html_erb__177043221052686189_69882406647740'
+app/views/expenses/_form.html.erb:4:in `_app_views_expenses__form_html_erb__177043221052686189_69882406647740'
+app/views/expenses/new.js.erb:1:in `_app_views_expenses_new_js_erb___2569132285239451819_69882406588260'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.3ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.2ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb (18.1ms)
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 16:47:20 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  [1m[36mType Load (0.3ms)[0m  [1m[34mSELECT "types".* FROM "types" ORDER BY "types"."name" ASC[0m
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" ORDER BY "categories"."name" ASC[0m
+  Rendered expenses/_form.html.erb (28.6ms)
+  Rendered expenses/new.js.erb (36.9ms)
+Completed 500 Internal Server Error in 54ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `amount' for #<Expense:0x00007f1d920ef220>
+Did you mean?  amounth
+               amounth?
+               amounth=):
+    43:             <div class="col-sm-6">
+    44:               <div class="form-group">
+    45:                 <%= f.label :Amounth %>
+    46:                 <%= f.text_field :amount,  class: "form-control", placeholder: "Ingrese el monto del gasto" %>
+    47:               </div>
+    48:             </div>
+    49:           </div>
+  
+app/views/expenses/_form.html.erb:46:in `block in _app_views_expenses__form_html_erb__177043221052686189_69882490564000'
+app/views/expenses/_form.html.erb:4:in `_app_views_expenses__form_html_erb__177043221052686189_69882490564000'
+app/views/expenses/new.js.erb:1:in `_app_views_expenses_new_js_erb___2569132285239451819_69882490612280'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.3ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (2.5ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb (20.3ms)
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 16:47:21 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  [1m[36mType Load (0.4ms)[0m  [1m[34mSELECT "types".* FROM "types" ORDER BY "types"."name" ASC[0m
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" ORDER BY "categories"."name" ASC[0m
+  Rendered expenses/_form.html.erb (28.7ms)
+  Rendered expenses/new.js.erb (36.5ms)
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `amount' for #<Expense:0x00007f1d91804228>
+Did you mean?  amounth
+               amounth?
+               amounth=):
+    43:             <div class="col-sm-6">
+    44:               <div class="form-group">
+    45:                 <%= f.label :Amounth %>
+    46:                 <%= f.text_field :amount,  class: "form-control", placeholder: "Ingrese el monto del gasto" %>
+    47:               </div>
+    48:             </div>
+    49:           </div>
+  
+app/views/expenses/_form.html.erb:46:in `block in _app_views_expenses__form_html_erb__177043221052686189_69882485869920'
+app/views/expenses/_form.html.erb:4:in `_app_views_expenses__form_html_erb__177043221052686189_69882485869920'
+app/views/expenses/new.js.erb:1:in `_app_views_expenses_new_js_erb___2569132285239451819_69882485928180'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.4ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.5ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb (24.7ms)
+Started GET "/expenses" for 127.0.0.1 at 2019-08-10 16:47:33 -0500
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered expenses/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 130ms (Views: 127.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 16:47:36 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT "types".* FROM "types" ORDER BY "types"."name" ASC[0m
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" ORDER BY "categories"."name" ASC[0m
+  Rendered expenses/_form.html.erb (9.9ms)
+  Rendered expenses/new.js.erb (17.9ms)
+Completed 200 OK in 39ms (Views: 28.8ms | ActiveRecord: 0.5ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateExpenses (20190727202917)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  [1m[35mDROP TABLE "expenses"[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20190727202917"]]
+  [1m[35m (112.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateExpenses (20190727202917)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "expenses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" date, "amount" decimal, "concept" varchar, "type_id" integer, "category_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mselect sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE  INDEX "index_expenses_on_type_id" ON "expenses" ("type_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_expenses_on_type_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_expenses_on_type_id' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE  INDEX "index_expenses_on_category_id" ON "expenses" ("category_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_expenses_on_category_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_expenses_on_category_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_expenses_on_type_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_expenses_on_type_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "index_expenses_on_user_id" ON "expenses" ("user_id")[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190727202917"]]
+  [1m[35m (116.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_expenses_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_expenses_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_expenses_on_category_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_expenses_on_category_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_expenses_on_type_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_expenses_on_type_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+Started GET "/expenses" for 127.0.0.1 at 2019-08-10 16:52:27 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered expenses/index.html.erb within layouts/application (34.8ms)
+Completed 200 OK in 517ms (Views: 502.0ms | ActiveRecord: 2.1ms)
+
+
