@@ -1,0 +1,61 @@
+<div class="modal fade" tabindex="-1" role="dialog" id="expense-modal-form">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <%= form_for @expense, remote: true do |f| %>
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title"></h4>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="form-group">
+                <%= f.label :Type %>
+                <%= f.collection_select(:type_id, Type.order(:name), :id, :name, {prompt: 'Select expense type'}, {class: "form-control"}) %>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <%= f.label :concept %>
+                <%= f.date_field :date,  class: "form-control" %>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="form-group">
+                <%= f.label :Concept %>
+                <%= f.text_field :concept,  class: "form-control", placeholder: "Ingrese el concepto" %>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="form-group">
+                <%= f.label :Category %>
+                <%= f.collection_select(:category_id, Category.order(:name), :id, :name, {prompt: 'Select a Category'}, {class: "form-control"}) %>
+              </div>
+            </div>
+            <div class="row">
+            <div class="col-sm-6">
+              <div class="form-group">
+                <%= f.label :Amounth %>
+                <%= f.text_field :amount,  class: "form-control", placeholder: "Ingrese el monto del gasto" %>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <%= f.submit "Crear Expense", class: "btn btn-default" %>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+        </div>
+        <% end %>
+      </div><!-- /.modal-content -->
+  
+    </div><!-- /.modal-dialog -->
+  
+  </div><!-- /.modal -->

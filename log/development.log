@@ -1557,3 +1557,2928 @@ Processing by ExpensesController#index as HTML
 Completed 200 OK in 103ms (Views: 100.0ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/expenses" for 127.0.0.1 at 2019-08-03 16:57:40 -0500
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered expenses/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 107ms (Views: 104.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/expenses" for 127.0.0.1 at 2019-08-03 16:57:41 -0500
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered expenses/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 95ms (Views: 92.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/expenses" for 127.0.0.1 at 2019-08-03 16:57:41 -0500
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered expenses/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 108ms (Views: 105.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/expenses" for 127.0.0.1 at 2019-08-03 16:57:42 -0500
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered expenses/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 101ms (Views: 98.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-10 14:33:06 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (22.4ms)
+Completed 200 OK in 895ms (Views: 855.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-cf39870db34e72a29ca0754baf249d4644551f110abae302073e3a12a411f61c.css?body=1" for 127.0.0.1 at 2019-08-10 14:33:07 -0500
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2019-08-10 14:33:07 -0500
+Started GET "/" for 127.0.0.1 at 2019-08-10 14:33:17 -0500
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 132ms (Views: 130.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-10 14:33:18 -0500
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 175ms (Views: 173.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/expenses" for 127.0.0.1 at 2019-08-10 14:33:20 -0500
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered expenses/index.html.erb within layouts/application (18.7ms)
+Completed 200 OK in 142ms (Views: 137.4ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2019-08-10 14:33:22 -0500
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 130ms (Views: 112.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/categories/new" for 127.0.0.1 at 2019-08-10 14:33:24 -0500
+Processing by CategoriesController#new as JS
+  Rendering categories/new.js.erb
+  Rendered categories/_form.html.erb (139.0ms)
+  Rendered categories/new.js.erb (154.8ms)
+Completed 200 OK in 198ms (Views: 167.8ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/categories/3" for 127.0.0.1 at 2019-08-10 14:33:30 -0500
+Processing by CategoriesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+Agwbvne5LMcFR7/pJKldMySZHxmP3WEy2/3tDye7LuQYYirtHvP5RHZSBsVcJSfh5PsC1Oaiy4cYKZKDAcrdw==", "id"=>"3"}
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "categories" WHERE "categories"."id" = ?[0m  [["id", 3]]
+  [1m[35m (99.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/categories
+Completed 302 Found in 123ms (ActiveRecord: 99.7ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2019-08-10 14:33:30 -0500
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 134ms (Views: 130.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2019-08-10 14:33:33 -0500
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 150ms (Views: 147.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/expenses" for 127.0.0.1 at 2019-08-10 14:38:34 -0500
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered expenses/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 112ms (Views: 109.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/expenses" for 127.0.0.1 at 2019-08-10 14:38:35 -0500
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered expenses/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 89ms (Views: 85.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/expenses" for 127.0.0.1 at 2019-08-10 14:38:36 -0500
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered expenses/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 89ms (Views: 85.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/expenses" for 127.0.0.1 at 2019-08-10 14:38:37 -0500
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered expenses/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 103ms (Views: 101.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/expenses" for 127.0.0.1 at 2019-08-10 14:45:11 -0500
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  Rendered expenses/index.html.erb within layouts/application (22.8ms)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:39: syntax error, unexpected '='
+...ense_path, remote: true, class="btn btn-success pull-left"><...
+...                              ^
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:39: syntax error, unexpected '<'
+...s="btn btn-success pull-left"><span class="glyphicon glyphic...
+...                              ^
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:39: syntax error, unexpected '<'
+...ss="glyphicon glyphicon-plus"></span> );@output_buffer.safe_...
+...                              ^
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:41: unknown regexp options - pa
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:41: unmatched close parenthesis: /span> );@output_buffer.safe_append='
+          <h4 class="dropdown pull-right">
+            <button type="button" class="dropdown-toggle btn btn-link" data-toggle="dropdown">April 2016 <span class="caret"></
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:41: syntax error, unexpected '<'
+...16 <span class="caret"></span></button>
+...                              ^
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:43: unknown regexp option - a
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:43: syntax error, unexpected '<'
+...on"><a href="#">April 2016</a></li>
+...                              ^
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:44: unknown regexp option - a
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:44: syntax error, unexpected '<'
+...on"><a href="#">March 2016</a></li>
+...                              ^
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:46: unknown regexp option - l
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:47: syntax error, unexpected '<'
+          </h4>
+          ^
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:48: unknown regexp options - dv
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:49: syntax error, unexpected '<'
+      </div>
+      ^
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:54: unknown regexp options - th
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:55: syntax error, unexpected '<'
+            <th>Concepto</th>
+            ^
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:56: unknown regexp options - th
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:57: syntax error, unexpected '<'
+            <th class="text-right">Valor</...
+            ^
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:58: unknown regexp options - tr
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:59: syntax error, unexpected '<'
+        </thead>
+        ^
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:63: unknown regexp options - dv
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:64: syntax error, unexpected '<'
+              <div class="month">Apr</div>
+              ^
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:65: unknown regexp options - td
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:66: syntax error, unexpected '<'
+            <td>
+            ^
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:69: unknown regexp options - dv
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:70: syntax error, unexpected '<'
+              <div>
+              ^
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:71: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+...class="concept">Example concept</span>
+...                        ^~~~~~~
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:72: unknown regexp options - dv
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:73: syntax error, unexpected '<'
+            </td>
+            ^
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:74: unknown regexp options - td
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:75: syntax error, unexpected '<'
+            <td class="text-right" style="...
+            ^
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:75: syntax error, unexpected tIDENTIFIER, expecting ')'
+...   <td class="text-right" style="width: 170px;">
+...                          ^~~~~
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:76: syntax error, unexpected '<'
+              <div class="amount">$1,000,000...
+              ^
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:76: syntax error, unexpected ',', expecting ')'
+...        <div class="amount">$1,000,000</div>
+...                              ^
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:78: unknown regexp options - pa
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:79: unknown regexp options - pa
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:80: unknown regexp options - td
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:81: syntax error, unexpected '<'
+          </tr>
+          ^
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:82: unknown regexp options - tbdy
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:83: syntax error, unexpected '<'
+      </table>
+      ^
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:84: unknown regexp options - dv
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:85: syntax error, unexpected '<'
+  </div>
+  ^
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:86: unknown regexp options - dv
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:90: unterminated string meets end of file
+          end
+             ^
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:90: syntax error, unexpected end-of-input, expecting ')'
+          end
+             ^):
+  
+app/views/expenses/index.html.erb:39: syntax error, unexpected '='
+app/views/expenses/index.html.erb:39: syntax error, unexpected '<'
+app/views/expenses/index.html.erb:39: syntax error, unexpected '<'
+app/views/expenses/index.html.erb:41: unknown regexp options - pa
+app/views/expenses/index.html.erb:41: unmatched close parenthesis: /span> );@output_buffer.safe_append='
+app/views/expenses/index.html.erb:41: syntax error, unexpected '<'
+app/views/expenses/index.html.erb:43: unknown regexp option - a
+app/views/expenses/index.html.erb:43: syntax error, unexpected '<'
+app/views/expenses/index.html.erb:44: unknown regexp option - a
+app/views/expenses/index.html.erb:44: syntax error, unexpected '<'
+app/views/expenses/index.html.erb:46: unknown regexp option - l
+app/views/expenses/index.html.erb:47: syntax error, unexpected '<'
+app/views/expenses/index.html.erb:48: unknown regexp options - dv
+app/views/expenses/index.html.erb:49: syntax error, unexpected '<'
+app/views/expenses/index.html.erb:54: unknown regexp options - th
+app/views/expenses/index.html.erb:55: syntax error, unexpected '<'
+app/views/expenses/index.html.erb:56: unknown regexp options - th
+app/views/expenses/index.html.erb:57: syntax error, unexpected '<'
+app/views/expenses/index.html.erb:58: unknown regexp options - tr
+app/views/expenses/index.html.erb:59: syntax error, unexpected '<'
+app/views/expenses/index.html.erb:63: unknown regexp options - dv
+app/views/expenses/index.html.erb:64: syntax error, unexpected '<'
+app/views/expenses/index.html.erb:65: unknown regexp options - td
+app/views/expenses/index.html.erb:66: syntax error, unexpected '<'
+app/views/expenses/index.html.erb:69: unknown regexp options - dv
+app/views/expenses/index.html.erb:70: syntax error, unexpected '<'
+app/views/expenses/index.html.erb:71: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+app/views/expenses/index.html.erb:72: unknown regexp options - dv
+app/views/expenses/index.html.erb:73: syntax error, unexpected '<'
+app/views/expenses/index.html.erb:74: unknown regexp options - td
+app/views/expenses/index.html.erb:75: syntax error, unexpected '<'
+app/views/expenses/index.html.erb:75: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/expenses/index.html.erb:76: syntax error, unexpected '<'
+app/views/expenses/index.html.erb:76: syntax error, unexpected ',', expecting ')'
+app/views/expenses/index.html.erb:78: unknown regexp options - pa
+app/views/expenses/index.html.erb:79: unknown regexp options - pa
+app/views/expenses/index.html.erb:80: unknown regexp options - td
+app/views/expenses/index.html.erb:81: syntax error, unexpected '<'
+app/views/expenses/index.html.erb:82: unknown regexp options - tbdy
+app/views/expenses/index.html.erb:83: syntax error, unexpected '<'
+app/views/expenses/index.html.erb:84: unknown regexp options - dv
+app/views/expenses/index.html.erb:85: syntax error, unexpected '<'
+app/views/expenses/index.html.erb:86: unknown regexp options - dv
+app/views/expenses/index.html.erb:90: unterminated string meets end of file
+app/views/expenses/index.html.erb:90: syntax error, unexpected end-of-input, expecting ')'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (11.2ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.8ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (48.5ms)
+Started GET "/expenses" for 127.0.0.1 at 2019-08-10 14:45:40 -0500
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  Rendered expenses/index.html.erb within layouts/application (3.6ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:39: syntax error, unexpected '<'
+...s:"btn btn-success pull-left"><span class="glyphicon glyphic...
+...                              ^
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:39: syntax error, unexpected '<'
+...ss="glyphicon glyphicon-plus"></span> );@output_buffer.safe_...
+...                              ^
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:41: unknown regexp options - pa
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:41: unmatched close parenthesis: /span> );@output_buffer.safe_append='
+          <h4 class="dropdown pull-right">
+            <button type="button" class="dropdown-toggle btn btn-link" data-toggle="dropdown">April 2016 <span class="caret"></
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:41: syntax error, unexpected '<'
+...16 <span class="caret"></span></button>
+...                              ^
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:43: unknown regexp option - a
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:43: syntax error, unexpected '<'
+...on"><a href="#">April 2016</a></li>
+...                              ^
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:44: unknown regexp option - a
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:44: syntax error, unexpected '<'
+...on"><a href="#">March 2016</a></li>
+...                              ^
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:46: unknown regexp option - l
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:47: syntax error, unexpected '<'
+          </h4>
+          ^
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:48: unknown regexp options - dv
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:49: syntax error, unexpected '<'
+      </div>
+      ^
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:54: unknown regexp options - th
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:55: syntax error, unexpected '<'
+            <th>Concepto</th>
+            ^
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:56: unknown regexp options - th
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:57: syntax error, unexpected '<'
+            <th class="text-right">Valor</...
+            ^
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:58: unknown regexp options - tr
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:59: syntax error, unexpected '<'
+        </thead>
+        ^
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:63: unknown regexp options - dv
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:64: syntax error, unexpected '<'
+              <div class="month">Apr</div>
+              ^
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:65: unknown regexp options - td
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:66: syntax error, unexpected '<'
+            <td>
+            ^
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:69: unknown regexp options - dv
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:70: syntax error, unexpected '<'
+              <div>
+              ^
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:71: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+...class="concept">Example concept</span>
+...                        ^~~~~~~
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:72: unknown regexp options - dv
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:73: syntax error, unexpected '<'
+            </td>
+            ^
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:74: unknown regexp options - td
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:75: syntax error, unexpected '<'
+            <td class="text-right" style="...
+            ^
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:75: syntax error, unexpected tIDENTIFIER, expecting ')'
+...   <td class="text-right" style="width: 170px;">
+...                          ^~~~~
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:76: syntax error, unexpected '<'
+              <div class="amount">$1,000,000...
+              ^
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:76: syntax error, unexpected ',', expecting ')'
+...        <div class="amount">$1,000,000</div>
+...                              ^
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:78: unknown regexp options - pa
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:79: unknown regexp options - pa
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:80: unknown regexp options - td
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:81: syntax error, unexpected '<'
+          </tr>
+          ^
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:82: unknown regexp options - tbdy
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:83: syntax error, unexpected '<'
+      </table>
+      ^
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:84: unknown regexp options - dv
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:85: syntax error, unexpected '<'
+  </div>
+  ^
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:86: unknown regexp options - dv
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:90: unterminated string meets end of file
+          end
+             ^
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:90: syntax error, unexpected end-of-input, expecting ')'
+          end
+             ^):
+  
+app/views/expenses/index.html.erb:39: syntax error, unexpected '<'
+app/views/expenses/index.html.erb:39: syntax error, unexpected '<'
+app/views/expenses/index.html.erb:41: unknown regexp options - pa
+app/views/expenses/index.html.erb:41: unmatched close parenthesis: /span> );@output_buffer.safe_append='
+app/views/expenses/index.html.erb:41: syntax error, unexpected '<'
+app/views/expenses/index.html.erb:43: unknown regexp option - a
+app/views/expenses/index.html.erb:43: syntax error, unexpected '<'
+app/views/expenses/index.html.erb:44: unknown regexp option - a
+app/views/expenses/index.html.erb:44: syntax error, unexpected '<'
+app/views/expenses/index.html.erb:46: unknown regexp option - l
+app/views/expenses/index.html.erb:47: syntax error, unexpected '<'
+app/views/expenses/index.html.erb:48: unknown regexp options - dv
+app/views/expenses/index.html.erb:49: syntax error, unexpected '<'
+app/views/expenses/index.html.erb:54: unknown regexp options - th
+app/views/expenses/index.html.erb:55: syntax error, unexpected '<'
+app/views/expenses/index.html.erb:56: unknown regexp options - th
+app/views/expenses/index.html.erb:57: syntax error, unexpected '<'
+app/views/expenses/index.html.erb:58: unknown regexp options - tr
+app/views/expenses/index.html.erb:59: syntax error, unexpected '<'
+app/views/expenses/index.html.erb:63: unknown regexp options - dv
+app/views/expenses/index.html.erb:64: syntax error, unexpected '<'
+app/views/expenses/index.html.erb:65: unknown regexp options - td
+app/views/expenses/index.html.erb:66: syntax error, unexpected '<'
+app/views/expenses/index.html.erb:69: unknown regexp options - dv
+app/views/expenses/index.html.erb:70: syntax error, unexpected '<'
+app/views/expenses/index.html.erb:71: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+app/views/expenses/index.html.erb:72: unknown regexp options - dv
+app/views/expenses/index.html.erb:73: syntax error, unexpected '<'
+app/views/expenses/index.html.erb:74: unknown regexp options - td
+app/views/expenses/index.html.erb:75: syntax error, unexpected '<'
+app/views/expenses/index.html.erb:75: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/expenses/index.html.erb:76: syntax error, unexpected '<'
+app/views/expenses/index.html.erb:76: syntax error, unexpected ',', expecting ')'
+app/views/expenses/index.html.erb:78: unknown regexp options - pa
+app/views/expenses/index.html.erb:79: unknown regexp options - pa
+app/views/expenses/index.html.erb:80: unknown regexp options - td
+app/views/expenses/index.html.erb:81: syntax error, unexpected '<'
+app/views/expenses/index.html.erb:82: unknown regexp options - tbdy
+app/views/expenses/index.html.erb:83: syntax error, unexpected '<'
+app/views/expenses/index.html.erb:84: unknown regexp options - dv
+app/views/expenses/index.html.erb:85: syntax error, unexpected '<'
+app/views/expenses/index.html.erb:86: unknown regexp options - dv
+app/views/expenses/index.html.erb:90: unterminated string meets end of file
+app/views/expenses/index.html.erb:90: syntax error, unexpected end-of-input, expecting ')'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (12.3ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.2ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.9ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (49.2ms)
+Started GET "/expenses" for 127.0.0.1 at 2019-08-10 14:46:24 -0500
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  Rendered expenses/index.html.erb within layouts/application (3.7ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:39: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ull-left <span class="glyphicon glyphicon-plus"></span>" );@...
+...                      ^~~~~~~~~
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/index.html.erb:39: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...lass="glyphicon glyphicon-plus"></span>" );@output_buffer.sa...
+...                              ^):
+  
+app/views/expenses/index.html.erb:39: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/expenses/index.html.erb:39: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.0ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (41.5ms)
+Started GET "/expenses" for 127.0.0.1 at 2019-08-10 14:46:55 -0500
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered expenses/index.html.erb within layouts/application (590.4ms)
+Completed 500 Internal Server Error in 595ms (ActiveRecord: 1.5ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_expense_path' for #<#<Class:0x00007fcc951f3970>:0x00007fcc95b613e0>
+Did you mean?  new_password_path):
+    36: 
+    37:       <div class="row" style="margin-top: 20px;">
+    38:         <div class="col-md-12">
+    39:           <%= link_to "Add New Expense", new_expense_path, remote: true, class:"btn btn-success pull-left glyphicon glyphicon-plus" %>
+    40:           <h4 class="dropdown pull-right">
+    41:             <button type="button" class="dropdown-toggle btn btn-link" data-toggle="dropdown">April 2016 <span class="caret"></span></button>
+    42:             <ul class="dropdown-menu" role="menu">
+  
+app/views/expenses/index.html.erb:39:in `_app_views_expenses_index_html_erb___4489753995248164219_70258330898200'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (10.1ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.8ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (44.9ms)
+Started GET "/expenses" for 127.0.0.1 at 2019-08-10 14:47:50 -0500
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered expenses/index.html.erb within layouts/application (618.0ms)
+Completed 500 Internal Server Error in 628ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_expense_path' for #<#<Class:0x00007fcc951f3970>:0x00007fcc951b5da0>
+Did you mean?  new_password_path):
+    36: 
+    37:       <div class="row" style="margin-top: 20px;">
+    38:         <div class="col-md-12">
+    39:           <%= link_to "Add New Expense", new_expense_path, remote: true, class:"btn btn-success pull-left glyphicon glyphicon-plus" %>
+    40:           <h4 class="dropdown pull-right">
+    41:             <button type="button" class="dropdown-toggle btn btn-link" data-toggle="dropdown">April 2016 <span class="caret"></span></button>
+    42:             <ul class="dropdown-menu" role="menu">
+  
+app/views/expenses/index.html.erb:39:in `_app_views_expenses_index_html_erb___4489753995248164219_70258325830280'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.5ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (39.4ms)
+Started GET "/expenses" for 127.0.0.1 at 2019-08-10 14:48:24 -0500
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered expenses/index.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 124ms (Views: 116.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 14:49:12 -0500
+Processing by ExpensesController#new as JS
+No template found for ExpensesController#new, rendering head :no_content
+Completed 204 No Content in 67ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 14:49:14 -0500
+Processing by ExpensesController#new as JS
+No template found for ExpensesController#new, rendering head :no_content
+Completed 204 No Content in 51ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 14:49:16 -0500
+Processing by ExpensesController#new as JS
+No template found for ExpensesController#new, rendering head :no_content
+Completed 204 No Content in 51ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 14:49:17 -0500
+Processing by ExpensesController#new as JS
+No template found for ExpensesController#new, rendering head :no_content
+Completed 204 No Content in 52ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/expenses" for 127.0.0.1 at 2019-08-10 14:55:08 -0500
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered expenses/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 123ms (Views: 119.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 14:55:12 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (401.0ms)
+  Rendered expenses/new.js.erb (409.1ms)
+Completed 500 Internal Server Error in 426ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `title_expense' for #<#<Class:0x00007fcc95a3b880>:0x00007fcc957eee88>):
+     5:         <div class="modal-header">
+     6:           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+     7:           <span aria-hidden="true">&times;</span></button>
+     8:           <h4 class="modal-title"><%= title_expense %></h4>
+     9:         </div>
+    10:         <div class="modal-body">
+    11:           <div class="row">
+  
+app/views/expenses/_form.html.erb:8:in `block in _app_views_expenses__form_html_erb___3973979765422982093_70258328921440'
+app/views/expenses/_form.html.erb:4:in `_app_views_expenses__form_html_erb___3973979765422982093_70258328921440'
+app/views/expenses/new.js.erb:1:in `_app_views_expenses_new_js_erb___497932453796115179_70258329109200'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.5ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.6ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb (21.1ms)
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 14:55:14 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (392.4ms)
+  Rendered expenses/new.js.erb (400.4ms)
+Completed 500 Internal Server Error in 417ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `title_expense' for #<#<Class:0x00007fcc95a3b880>:0x00007fcc94b136f0>):
+     5:         <div class="modal-header">
+     6:           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+     7:           <span aria-hidden="true">&times;</span></button>
+     8:           <h4 class="modal-title"><%= title_expense %></h4>
+     9:         </div>
+    10:         <div class="modal-body">
+    11:           <div class="row">
+  
+app/views/expenses/_form.html.erb:8:in `block in _app_views_expenses__form_html_erb___3973979765422982093_70258321957440'
+app/views/expenses/_form.html.erb:4:in `_app_views_expenses__form_html_erb___3973979765422982093_70258321957440'
+app/views/expenses/new.js.erb:1:in `_app_views_expenses_new_js_erb___497932453796115179_70258322373160'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.0ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.5ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb (17.9ms)
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 14:55:16 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (342.1ms)
+  Rendered expenses/new.js.erb (349.9ms)
+Completed 500 Internal Server Error in 365ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `title_expense' for #<#<Class:0x00007fcc95a3b880>:0x00007fcc95dbdf58>):
+     5:         <div class="modal-header">
+     6:           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+     7:           <span aria-hidden="true">&times;</span></button>
+     8:           <h4 class="modal-title"><%= title_expense %></h4>
+     9:         </div>
+    10:         <div class="modal-body">
+    11:           <div class="row">
+  
+app/views/expenses/_form.html.erb:8:in `block in _app_views_expenses__form_html_erb___3973979765422982093_70258332059740'
+app/views/expenses/_form.html.erb:4:in `_app_views_expenses__form_html_erb___3973979765422982093_70258332059740'
+app/views/expenses/new.js.erb:1:in `_app_views_expenses_new_js_erb___497932453796115179_70258332136920'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.0ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.3ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb (17.3ms)
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 14:55:17 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (348.6ms)
+  Rendered expenses/new.js.erb (354.8ms)
+Completed 500 Internal Server Error in 373ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `title_expense' for #<#<Class:0x00007fcc95a3b880>:0x00007fcc954bda48>):
+     5:         <div class="modal-header">
+     6:           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+     7:           <span aria-hidden="true">&times;</span></button>
+     8:           <h4 class="modal-title"><%= title_expense %></h4>
+     9:         </div>
+    10:         <div class="modal-body">
+    11:           <div class="row">
+  
+app/views/expenses/_form.html.erb:8:in `block in _app_views_expenses__form_html_erb___3973979765422982093_70258327246420'
+app/views/expenses/_form.html.erb:4:in `_app_views_expenses__form_html_erb___3973979765422982093_70258327246420'
+app/views/expenses/new.js.erb:1:in `_app_views_expenses_new_js_erb___497932453796115179_70258327418900'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.0ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.2ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb (16.5ms)
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 14:55:20 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (374.3ms)
+  Rendered expenses/new.js.erb (381.2ms)
+Completed 500 Internal Server Error in 401ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `title_expense' for #<#<Class:0x00007fcc95a3b880>:0x00007fcc9454d7e8>):
+     5:         <div class="modal-header">
+     6:           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+     7:           <span aria-hidden="true">&times;</span></button>
+     8:           <h4 class="modal-title"><%= title_expense %></h4>
+     9:         </div>
+    10:         <div class="modal-body">
+    11:           <div class="row">
+  
+app/views/expenses/_form.html.erb:8:in `block in _app_views_expenses__form_html_erb___3973979765422982093_70258319210160'
+app/views/expenses/_form.html.erb:4:in `_app_views_expenses__form_html_erb___3973979765422982093_70258319210160'
+app/views/expenses/new.js.erb:1:in `_app_views_expenses_new_js_erb___497932453796115179_70258319324360'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.0ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.2ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb (16.5ms)
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 14:59:05 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (349.6ms)
+  Rendered expenses/new.js.erb (357.8ms)
+Completed 500 Internal Server Error in 376ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `title_expense' for #<#<Class:0x00007fcc95a3b880>:0x00007fcc95a4cce8>):
+     5:         <div class="modal-header">
+     6:           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+     7:           <span aria-hidden="true">&times;</span></button>
+     8:           <h4 class="modal-title"><%= title_expense %></h4>
+     9:         </div>
+    10:         <div class="modal-body">
+    11:           <div class="row">
+  
+app/views/expenses/_form.html.erb:8:in `block in _app_views_expenses__form_html_erb___3973979765422982093_70258329883960'
+app/views/expenses/_form.html.erb:4:in `_app_views_expenses__form_html_erb___3973979765422982093_70258329883960'
+app/views/expenses/new.js.erb:1:in `_app_views_expenses_new_js_erb___497932453796115179_70258330333580'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.0ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.7ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb (17.7ms)
+Started GET "/expenses" for 127.0.0.1 at 2019-08-10 15:00:14 -0500
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered expenses/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 136ms (Views: 132.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:00:17 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (11.9ms)
+  Rendered expenses/new.js.erb (20.8ms)
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `new_record?' for nil:NilClass):
+    18:           </div>
+    19:         </div>
+    20:         <div class="modal-footer">
+    21:           <%= f.submit title_category, class: "btn btn-default" %>
+    22:           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    23:         </div>
+    24:         <% end %>
+  
+app/helpers/categories_helper.rb:3:in `title_category'
+app/views/expenses/_form.html.erb:21:in `block in _app_views_expenses__form_html_erb___3973979765422982093_70258334224820'
+app/views/expenses/_form.html.erb:4:in `_app_views_expenses__form_html_erb___3973979765422982093_70258334224820'
+app/views/expenses/new.js.erb:1:in `_app_views_expenses_new_js_erb___497932453796115179_70258334274580'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.1ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (2.1ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb (20.4ms)
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:00:18 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (15.0ms)
+  Rendered expenses/new.js.erb (22.5ms)
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `new_record?' for nil:NilClass):
+    18:           </div>
+    19:         </div>
+    20:         <div class="modal-footer">
+    21:           <%= f.submit title_category, class: "btn btn-default" %>
+    22:           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    23:         </div>
+    24:         <% end %>
+  
+app/helpers/categories_helper.rb:3:in `title_category'
+app/views/expenses/_form.html.erb:21:in `block in _app_views_expenses__form_html_erb___3973979765422982093_70258328415940'
+app/views/expenses/_form.html.erb:4:in `_app_views_expenses__form_html_erb___3973979765422982093_70258328415940'
+app/views/expenses/new.js.erb:1:in `_app_views_expenses_new_js_erb___497932453796115179_70258328579660'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.0ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (2.1ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb (18.9ms)
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:00:18 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (12.6ms)
+  Rendered expenses/new.js.erb (21.4ms)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `new_record?' for nil:NilClass):
+    18:           </div>
+    19:         </div>
+    20:         <div class="modal-footer">
+    21:           <%= f.submit title_category, class: "btn btn-default" %>
+    22:           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    23:         </div>
+    24:         <% end %>
+  
+app/helpers/categories_helper.rb:3:in `title_category'
+app/views/expenses/_form.html.erb:21:in `block in _app_views_expenses__form_html_erb___3973979765422982093_70258319472320'
+app/views/expenses/_form.html.erb:4:in `_app_views_expenses__form_html_erb___3973979765422982093_70258319472320'
+app/views/expenses/new.js.erb:1:in `_app_views_expenses_new_js_erb___497932453796115179_70258319709900'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.9ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.4ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb (18.9ms)
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:02:08 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (52.8ms)
+  Rendered expenses/new.js.erb (62.8ms)
+Completed 500 Internal Server Error in 111ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `new_record?' for nil:NilClass):
+    18:           </div>
+    19:         </div>
+    20:         <div class="modal-footer">
+    21:           <%= f.submit title_category, class: "btn btn-default" %>
+    22:           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    23:         </div>
+    24:         <% end %>
+  
+app/helpers/categories_helper.rb:3:in `title_category'
+app/views/expenses/_form.html.erb:21:in `block in _app_views_expenses__form_html_erb___497012330887607246_47020865020160'
+app/views/expenses/_form.html.erb:4:in `_app_views_expenses__form_html_erb___497012330887607246_47020865020160'
+app/views/expenses/new.js.erb:1:in `_app_views_expenses_new_js_erb__1377887919293525628_47020863714580'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.3ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.1ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb (21.6ms)
+Started GET "/expenses" for 127.0.0.1 at 2019-08-10 15:06:11 -0500
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered expenses/index.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 505ms (Views: 501.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-08-10 15:06:19 -0500
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 152ms (Views: 150.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/expenses" for 127.0.0.1 at 2019-08-10 15:06:22 -0500
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered expenses/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 170ms (Views: 167.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:06:24 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (18.4ms)
+  Rendered expenses/new.js.erb (27.0ms)
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `new_record?' for nil:NilClass):
+    18:           </div>
+    19:         </div>
+    20:         <div class="modal-footer">
+    21:           <%= f.submit title_category, class: "btn btn-default" %>
+    22:           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    23:         </div>
+    24:         <% end %>
+  
+app/helpers/categories_helper.rb:3:in `title_category'
+app/views/expenses/_form.html.erb:21:in `block in _app_views_expenses__form_html_erb___497012330887607246_70296919221560'
+app/views/expenses/_form.html.erb:4:in `_app_views_expenses__form_html_erb___497012330887607246_70296919221560'
+app/views/expenses/new.js.erb:1:in `_app_views_expenses_new_js_erb__1377887919293525628_70296919034680'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.3ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.7ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb (23.5ms)
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:07:45 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (1.2ms)
+  Rendered expenses/new.js.erb (9.5ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/_form.html.erb:21: syntax error, unexpected tLABEL, expecting '='
+...uffer.append=( f.submit, class: "btn btn-default" );@output_...
+...                         ^~~~~~):
+  
+app/views/expenses/_form.html.erb:21: syntax error, unexpected tLABEL, expecting '='
+app/views/expenses/new.js.erb:1:in `_app_views_expenses_new_js_erb__1377887919293525628_70296919780020'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.text.erb (0.8ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.5ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.9ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (28.9ms)
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:07:46 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (1.5ms)
+  Rendered expenses/new.js.erb (9.6ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/_form.html.erb:21: syntax error, unexpected tLABEL, expecting '='
+...uffer.append=( f.submit, class: "btn btn-default" );@output_...
+...                         ^~~~~~):
+  
+app/views/expenses/_form.html.erb:21: syntax error, unexpected tLABEL, expecting '='
+app/views/expenses/new.js.erb:1:in `_app_views_expenses_new_js_erb__1377887919293525628_70296916087060'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.text.erb (1.1ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.4ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (2.1ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (33.8ms)
+Started GET "/expenses" for 127.0.0.1 at 2019-08-10 15:07:48 -0500
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered expenses/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 130ms (Views: 127.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:07:50 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (1.9ms)
+  Rendered expenses/new.js.erb (10.6ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/_form.html.erb:21: syntax error, unexpected tLABEL, expecting '='
+...uffer.append=( f.submit, class: "btn btn-default" );@output_...
+...                         ^~~~~~):
+  
+app/views/expenses/_form.html.erb:21: syntax error, unexpected tLABEL, expecting '='
+app/views/expenses/new.js.erb:1:in `_app_views_expenses_new_js_erb__1377887919293525628_70296920031180'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.text.erb (1.2ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.5ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (2.1ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (33.3ms)
+Started GET "/expenses" for 127.0.0.1 at 2019-08-10 15:08:27 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered expenses/index.html.erb within layouts/application (22.2ms)
+Completed 200 OK in 536ms (Views: 509.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:08:31 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (1.5ms)
+  Rendered expenses/new.js.erb (9.5ms)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 0.8ms)
+
+
+  
+SyntaxError (/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/_form.html.erb:21: syntax error, unexpected tLABEL, expecting '='
+...uffer.append=( f.submit, class: "btn btn-default" );@output_...
+...                         ^~~~~~):
+  
+app/views/expenses/_form.html.erb:21: syntax error, unexpected tLABEL, expecting '='
+app/views/expenses/new.js.erb:1:in `_app_views_expenses_new_js_erb__1785271460632078390_69845865785780'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.text.erb (1.7ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.4ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.5ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (29.8ms)
+Started GET "/expenses" for 127.0.0.1 at 2019-08-10 15:08:51 -0500
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered expenses/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 143ms (Views: 140.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:08:54 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (42.2ms)
+  Rendered expenses/new.js.erb (50.6ms)
+Completed 200 OK in 71ms (Views: 60.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:09:52 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (1.9ms)
+  Rendered expenses/new.js.erb (8.9ms)
+Completed 200 OK in 32ms (Views: 21.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/expenses" for 127.0.0.1 at 2019-08-10 15:13:55 -0500
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered expenses/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 156ms (Views: 153.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:13:56 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (9.1ms)
+  Rendered expenses/new.js.erb (19.3ms)
+Completed 200 OK in 43ms (Views: 32.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:14:25 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (6.4ms)
+  Rendered expenses/new.js.erb (15.1ms)
+Completed 200 OK in 33ms (Views: 27.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:15:38 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (3.4ms)
+  Rendered expenses/new.js.erb (10.7ms)
+Completed 200 OK in 26ms (Views: 18.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/expenses" for 127.0.0.1 at 2019-08-10 15:16:23 -0500
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered expenses/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 115ms (Views: 103.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:16:24 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (5.2ms)
+  Rendered expenses/new.js.erb (13.5ms)
+Completed 200 OK in 33ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/expenses" for 127.0.0.1 at 2019-08-10 15:17:28 -0500
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered expenses/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 96ms (Views: 94.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:17:29 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (2.0ms)
+  Rendered expenses/new.js.erb (10.2ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/_form.html.erb:53: syntax error, unexpected keyword_class, expecting ')'
+... f.submit "Crear Expense" class: "btn btn-default" );@output...
+...                          ^~~~~):
+  
+app/views/expenses/_form.html.erb:53: syntax error, unexpected keyword_class, expecting ')'
+app/views/expenses/new.js.erb:1:in `_app_views_expenses_new_js_erb__1785271460632078390_69845969116340'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.text.erb (1.8ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.1ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (2.0ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (29.8ms)
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:17:30 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (2.4ms)
+  Rendered expenses/new.js.erb (8.5ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/_form.html.erb:53: syntax error, unexpected keyword_class, expecting ')'
+... f.submit "Crear Expense" class: "btn btn-default" );@output...
+...                          ^~~~~):
+  
+app/views/expenses/_form.html.erb:53: syntax error, unexpected keyword_class, expecting ')'
+app/views/expenses/new.js.erb:1:in `_app_views_expenses_new_js_erb__1785271460632078390_47111864047820'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.text.erb (0.9ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.3ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.4ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (25.3ms)
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:17:31 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (1.3ms)
+  Rendered expenses/new.js.erb (8.6ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/_form.html.erb:53: syntax error, unexpected keyword_class, expecting ')'
+... f.submit "Crear Expense" class: "btn btn-default" );@output...
+...                          ^~~~~):
+  
+app/views/expenses/_form.html.erb:53: syntax error, unexpected keyword_class, expecting ')'
+app/views/expenses/new.js.erb:1:in `_app_views_expenses_new_js_erb__1785271460632078390_69845984131860'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.text.erb (0.9ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.4ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.1ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (24.9ms)
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:17:32 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (1.3ms)
+  Rendered expenses/new.js.erb (7.7ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/_form.html.erb:53: syntax error, unexpected keyword_class, expecting ')'
+... f.submit "Crear Expense" class: "btn btn-default" );@output...
+...                          ^~~~~):
+  
+app/views/expenses/_form.html.erb:53: syntax error, unexpected keyword_class, expecting ')'
+app/views/expenses/new.js.erb:1:in `_app_views_expenses_new_js_erb__1785271460632078390_69845981737860'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.text.erb (1.3ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.0ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.1ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (26.8ms)
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:17:32 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (1.3ms)
+  Rendered expenses/new.js.erb (8.4ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/_form.html.erb:53: syntax error, unexpected keyword_class, expecting ')'
+... f.submit "Crear Expense" class: "btn btn-default" );@output...
+...                          ^~~~~):
+  
+app/views/expenses/_form.html.erb:53: syntax error, unexpected keyword_class, expecting ')'
+app/views/expenses/new.js.erb:1:in `_app_views_expenses_new_js_erb__1785271460632078390_69845979095200'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.text.erb (1.1ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.0ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.2ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (25.3ms)
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:17:32 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (1.4ms)
+  Rendered expenses/new.js.erb (7.5ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/_form.html.erb:53: syntax error, unexpected keyword_class, expecting ')'
+... f.submit "Crear Expense" class: "btn btn-default" );@output...
+...                          ^~~~~):
+  
+app/views/expenses/_form.html.erb:53: syntax error, unexpected keyword_class, expecting ')'
+app/views/expenses/new.js.erb:1:in `_app_views_expenses_new_js_erb__1785271460632078390_69845976227980'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.text.erb (0.9ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.3ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.6ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (26.2ms)
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:17:32 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (1.4ms)
+  Rendered expenses/new.js.erb (7.7ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/_form.html.erb:53: syntax error, unexpected keyword_class, expecting ')'
+... f.submit "Crear Expense" class: "btn btn-default" );@output...
+...                          ^~~~~):
+  
+app/views/expenses/_form.html.erb:53: syntax error, unexpected keyword_class, expecting ')'
+app/views/expenses/new.js.erb:1:in `_app_views_expenses_new_js_erb__1785271460632078390_69845968357980'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.text.erb (0.9ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.0ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.2ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (24.1ms)
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:17:33 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (1.8ms)
+  Rendered expenses/new.js.erb (8.5ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/_form.html.erb:53: syntax error, unexpected keyword_class, expecting ')'
+... f.submit "Crear Expense" class: "btn btn-default" );@output...
+...                          ^~~~~):
+  
+app/views/expenses/_form.html.erb:53: syntax error, unexpected keyword_class, expecting ')'
+app/views/expenses/new.js.erb:1:in `_app_views_expenses_new_js_erb__1785271460632078390_47111864364780'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.text.erb (0.8ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.0ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (2.2ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (24.3ms)
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:17:33 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (1.5ms)
+  Rendered expenses/new.js.erb (7.5ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/_form.html.erb:53: syntax error, unexpected keyword_class, expecting ')'
+... f.submit "Crear Expense" class: "btn btn-default" );@output...
+...                          ^~~~~):
+  
+app/views/expenses/_form.html.erb:53: syntax error, unexpected keyword_class, expecting ')'
+app/views/expenses/new.js.erb:1:in `_app_views_expenses_new_js_erb__1785271460632078390_69845983872860'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.text.erb (1.1ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.3ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (24.9ms)
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:17:33 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (1.4ms)
+  Rendered expenses/new.js.erb (8.6ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/_form.html.erb:53: syntax error, unexpected keyword_class, expecting ')'
+... f.submit "Crear Expense" class: "btn btn-default" );@output...
+...                          ^~~~~):
+  
+app/views/expenses/_form.html.erb:53: syntax error, unexpected keyword_class, expecting ')'
+app/views/expenses/new.js.erb:1:in `_app_views_expenses_new_js_erb__1785271460632078390_69845980383880'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.text.erb (1.2ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.5ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.5ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (27.3ms)
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:17:33 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (2.1ms)
+  Rendered expenses/new.js.erb (10.4ms)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/_form.html.erb:53: syntax error, unexpected keyword_class, expecting ')'
+... f.submit "Crear Expense" class: "btn btn-default" );@output...
+...                          ^~~~~):
+  
+app/views/expenses/_form.html.erb:53: syntax error, unexpected keyword_class, expecting ')'
+app/views/expenses/new.js.erb:1:in `_app_views_expenses_new_js_erb__1785271460632078390_69845976505940'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.text.erb (0.9ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (2.3ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.4ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (32.3ms)
+Started GET "/expenses" for 127.0.0.1 at 2019-08-10 15:17:49 -0500
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered expenses/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 109ms (Views: 106.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:17:50 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (2.7ms)
+  Rendered expenses/new.js.erb (9.5ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/_form.html.erb:53: syntax error, unexpected keyword_class, expecting ')'
+... f.submit "Crear Expense" class: "btn btn-default" );@output...
+...                          ^~~~~):
+  
+app/views/expenses/_form.html.erb:53: syntax error, unexpected keyword_class, expecting ')'
+app/views/expenses/new.js.erb:1:in `_app_views_expenses_new_js_erb__1785271460632078390_69845983002540'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.text.erb (0.8ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.0ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.9ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (27.4ms)
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:17:50 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (1.3ms)
+  Rendered expenses/new.js.erb (8.3ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/_form.html.erb:53: syntax error, unexpected keyword_class, expecting ')'
+... f.submit "Crear Expense" class: "btn btn-default" );@output...
+...                          ^~~~~):
+  
+app/views/expenses/_form.html.erb:53: syntax error, unexpected keyword_class, expecting ')'
+app/views/expenses/new.js.erb:1:in `_app_views_expenses_new_js_erb__1785271460632078390_69845978133620'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.text.erb (0.9ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.3ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.5ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (24.7ms)
+Started GET "/expenses" for 127.0.0.1 at 2019-08-10 15:18:07 -0500
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered expenses/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 107ms (Views: 105.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:18:08 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (2.0ms)
+  Rendered expenses/new.js.erb (9.8ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/_form.html.erb:53: syntax error, unexpected keyword_class, expecting ')'
+...append=( f.submit 'crear' class: "btn btn-default" );@output...
+...                          ^~~~~):
+  
+app/views/expenses/_form.html.erb:53: syntax error, unexpected keyword_class, expecting ')'
+app/views/expenses/new.js.erb:1:in `_app_views_expenses_new_js_erb__1785271460632078390_69845983716280'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.text.erb (1.7ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.3ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.2ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (30.3ms)
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:18:08 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (1.5ms)
+  Rendered expenses/new.js.erb (9.4ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/_form.html.erb:53: syntax error, unexpected keyword_class, expecting ')'
+...append=( f.submit 'crear' class: "btn btn-default" );@output...
+...                          ^~~~~):
+  
+app/views/expenses/_form.html.erb:53: syntax error, unexpected keyword_class, expecting ')'
+app/views/expenses/new.js.erb:1:in `_app_views_expenses_new_js_erb__1785271460632078390_69845978269100'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.text.erb (1.0ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.0ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (2.0ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (27.2ms)
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:18:09 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (1.8ms)
+  Rendered expenses/new.js.erb (10.9ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/_form.html.erb:53: syntax error, unexpected keyword_class, expecting ')'
+...append=( f.submit 'crear' class: "btn btn-default" );@output...
+...                          ^~~~~):
+  
+app/views/expenses/_form.html.erb:53: syntax error, unexpected keyword_class, expecting ')'
+app/views/expenses/new.js.erb:1:in `_app_views_expenses_new_js_erb__1785271460632078390_69845970121740'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.text.erb (1.1ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.3ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.3ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (25.4ms)
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:18:17 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (3.7ms)
+  Rendered expenses/new.js.erb (10.9ms)
+Completed 200 OK in 29ms (Views: 19.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:18:51 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (4.0ms)
+  Rendered expenses/new.js.erb (10.7ms)
+Completed 200 OK in 26ms (Views: 19.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/expenses" for 127.0.0.1 at 2019-08-10 15:20:41 -0500
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered expenses/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 99ms (Views: 95.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:20:42 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (7.4ms)
+  Rendered expenses/new.js.erb (15.5ms)
+Completed 200 OK in 33ms (Views: 24.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/expenses" for 127.0.0.1 at 2019-08-10 15:20:53 -0500
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered expenses/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 110ms (Views: 106.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:20:56 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (4.5ms)
+  Rendered expenses/new.js.erb (13.5ms)
+Completed 200 OK in 33ms (Views: 21.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/expenses" for 127.0.0.1 at 2019-08-10 15:22:29 -0500
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered expenses/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 97ms (Views: 95.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:22:30 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (28.9ms)
+  Rendered expenses/new.js.erb (36.4ms)
+Completed 200 OK in 53ms (Views: 46.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/expenses" for 127.0.0.1 at 2019-08-10 15:22:58 -0500
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered expenses/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 105ms (Views: 103.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:23:00 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (4.2ms)
+  Rendered expenses/new.js.erb (11.9ms)
+Completed 200 OK in 29ms (Views: 20.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/expenses" for 127.0.0.1 at 2019-08-10 15:24:09 -0500
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered expenses/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 106ms (Views: 103.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:24:11 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (3.9ms)
+  Rendered expenses/new.js.erb (12.5ms)
+Completed 200 OK in 31ms (Views: 22.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/expenses" for 127.0.0.1 at 2019-08-10 15:24:26 -0500
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered expenses/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 111ms (Views: 107.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:24:27 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (7.0ms)
+  Rendered expenses/new.js.erb (15.0ms)
+Completed 200 OK in 33ms (Views: 24.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/expenses" for 127.0.0.1 at 2019-08-10 15:29:15 -0500
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered expenses/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 107ms (Views: 104.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/expenses" for 127.0.0.1 at 2019-08-10 15:30:32 -0500
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered expenses/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 93ms (Views: 90.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:30:34 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (17.2ms)
+  Rendered expenses/new.js.erb (24.4ms)
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `Type' for #<Expense:0x00007f0c916b7c78>
+Did you mean?  type=):
+    12:             <div class="col-sm-6">
+    13:               <div class="form-group">
+    14:                 <%= f.label :Type %>
+    15:                 <%= f.select :Type,  class: "form-control", placeholder: "Ingrese un nuevo expense" %>
+    16:               </div>
+    17:             </div>
+    18:             <div class="col-sm-6">
+  
+app/views/expenses/_form.html.erb:15:in `block in _app_views_expenses__form_html_erb__2350005345014650193_69845977654900'
+app/views/expenses/_form.html.erb:4:in `_app_views_expenses__form_html_erb__2350005345014650193_69845977654900'
+app/views/expenses/new.js.erb:1:in `_app_views_expenses_new_js_erb__1785271460632078390_69845978018420'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (2.4ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.5ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb (20.6ms)
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:30:35 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (14.6ms)
+  Rendered expenses/new.js.erb (21.0ms)
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `Type' for #<Expense:0x00007f0c92285fc8>
+Did you mean?  type=):
+    12:             <div class="col-sm-6">
+    13:               <div class="form-group">
+    14:                 <%= f.label :Type %>
+    15:                 <%= f.select :Type,  class: "form-control", placeholder: "Ingrese un nuevo expense" %>
+    16:               </div>
+    17:             </div>
+    18:             <div class="col-sm-6">
+  
+app/views/expenses/_form.html.erb:15:in `block in _app_views_expenses__form_html_erb__2350005345014650193_69845984110500'
+app/views/expenses/_form.html.erb:4:in `_app_views_expenses__form_html_erb__2350005345014650193_69845984110500'
+app/views/expenses/new.js.erb:1:in `_app_views_expenses_new_js_erb__1785271460632078390_69845984223340'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.1ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.5ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb (19.0ms)
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:30:36 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (15.1ms)
+  Rendered expenses/new.js.erb (22.8ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `Type' for #<Expense:0x00007f0c91454878>
+Did you mean?  type=):
+    12:             <div class="col-sm-6">
+    13:               <div class="form-group">
+    14:                 <%= f.label :Type %>
+    15:                 <%= f.select :Type,  class: "form-control", placeholder: "Ingrese un nuevo expense" %>
+    16:               </div>
+    17:             </div>
+    18:             <div class="col-sm-6">
+  
+app/views/expenses/_form.html.erb:15:in `block in _app_views_expenses__form_html_erb__2350005345014650193_69845976567980'
+app/views/expenses/_form.html.erb:4:in `_app_views_expenses__form_html_erb__2350005345014650193_69845976567980'
+app/views/expenses/new.js.erb:1:in `_app_views_expenses_new_js_erb__1785271460632078390_69845976762700'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.1ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.2ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb (16.9ms)
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:30:36 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (16.5ms)
+  Rendered expenses/new.js.erb (22.7ms)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `Type' for #<Expense:0x000055b22befdc78>
+Did you mean?  type=):
+    12:             <div class="col-sm-6">
+    13:               <div class="form-group">
+    14:                 <%= f.label :Type %>
+    15:                 <%= f.select :Type,  class: "form-control", placeholder: "Ingrese un nuevo expense" %>
+    16:               </div>
+    17:             </div>
+    18:             <div class="col-sm-6">
+  
+app/views/expenses/_form.html.erb:15:in `block in _app_views_expenses__form_html_erb__2350005345014650193_47111863808560'
+app/views/expenses/_form.html.erb:4:in `_app_views_expenses__form_html_erb__2350005345014650193_47111863808560'
+app/views/expenses/new.js.erb:1:in `_app_views_expenses_new_js_erb__1785271460632078390_47111864715420'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.3ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.5ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb (21.4ms)
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:30:36 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (16.6ms)
+  Rendered expenses/new.js.erb (23.6ms)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `Type' for #<Expense:0x00007f0c91b13f88>
+Did you mean?  type=):
+    12:             <div class="col-sm-6">
+    13:               <div class="form-group">
+    14:                 <%= f.label :Type %>
+    15:                 <%= f.select :Type,  class: "form-control", placeholder: "Ingrese un nuevo expense" %>
+    16:               </div>
+    17:             </div>
+    18:             <div class="col-sm-6">
+  
+app/views/expenses/_form.html.erb:15:in `block in _app_views_expenses__form_html_erb__2350005345014650193_69845979881840'
+app/views/expenses/_form.html.erb:4:in `_app_views_expenses__form_html_erb__2350005345014650193_69845979881840'
+app/views/expenses/new.js.erb:1:in `_app_views_expenses_new_js_erb__1785271460632078390_69845980319900'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.1ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.5ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb (17.2ms)
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:30:36 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (16.5ms)
+  Rendered expenses/new.js.erb (23.0ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `Type' for #<Expense:0x00007f0c905e2a60>
+Did you mean?  type=):
+    12:             <div class="col-sm-6">
+    13:               <div class="form-group">
+    14:                 <%= f.label :Type %>
+    15:                 <%= f.select :Type,  class: "form-control", placeholder: "Ingrese un nuevo expense" %>
+    16:               </div>
+    17:             </div>
+    18:             <div class="col-sm-6">
+  
+app/views/expenses/_form.html.erb:15:in `block in _app_views_expenses__form_html_erb__2350005345014650193_69845968988360'
+app/views/expenses/_form.html.erb:4:in `_app_views_expenses__form_html_erb__2350005345014650193_69845968988360'
+app/views/expenses/new.js.erb:1:in `_app_views_expenses_new_js_erb__1785271460632078390_69845969184360'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.4ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.3ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb (20.6ms)
+Started GET "/expenses" for 127.0.0.1 at 2019-08-10 15:30:48 -0500
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered expenses/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 105ms (Views: 102.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:30:49 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (43.1ms)
+  Rendered expenses/new.js.erb (50.8ms)
+Completed 200 OK in 69ms (Views: 60.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/expenses" for 127.0.0.1 at 2019-08-10 15:31:04 -0500
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered expenses/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 111ms (Views: 106.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:31:05 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (10.8ms)
+  Rendered expenses/new.js.erb (17.9ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `all' for :type:Symbol):
+    12:             <div class="col-sm-6">
+    13:               <div class="form-group">
+    14:                 <%= f.label :Type %>
+    15:                 <%= f.select :type.all,  class: "form-control", placeholder: "Ingrese un nuevo expense" %>
+    16:               </div>
+    17:             </div>
+    18:             <div class="col-sm-6">
+  
+app/views/expenses/_form.html.erb:15:in `block in _app_views_expenses__form_html_erb__2350005345014650193_69845981072280'
+app/views/expenses/_form.html.erb:4:in `_app_views_expenses__form_html_erb__2350005345014650193_69845981072280'
+app/views/expenses/new.js.erb:1:in `_app_views_expenses_new_js_erb__1785271460632078390_69845981121260'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.0ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.6ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb (20.2ms)
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:31:06 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (8.8ms)
+  Rendered expenses/new.js.erb (16.1ms)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `all' for :type:Symbol):
+    12:             <div class="col-sm-6">
+    13:               <div class="form-group">
+    14:                 <%= f.label :Type %>
+    15:                 <%= f.select :type.all,  class: "form-control", placeholder: "Ingrese un nuevo expense" %>
+    16:               </div>
+    17:             </div>
+    18:             <div class="col-sm-6">
+  
+app/views/expenses/_form.html.erb:15:in `block in _app_views_expenses__form_html_erb__2350005345014650193_69845974563660'
+app/views/expenses/_form.html.erb:4:in `_app_views_expenses__form_html_erb__2350005345014650193_69845974563660'
+app/views/expenses/new.js.erb:1:in `_app_views_expenses_new_js_erb__1785271460632078390_69845970687340'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.1ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.2ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb (22.9ms)
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:31:06 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (8.8ms)
+  Rendered expenses/new.js.erb (15.1ms)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `all' for :type:Symbol):
+    12:             <div class="col-sm-6">
+    13:               <div class="form-group">
+    14:                 <%= f.label :Type %>
+    15:                 <%= f.select :type.all,  class: "form-control", placeholder: "Ingrese un nuevo expense" %>
+    16:               </div>
+    17:             </div>
+    18:             <div class="col-sm-6">
+  
+app/views/expenses/_form.html.erb:15:in `block in _app_views_expenses__form_html_erb__2350005345014650193_69845865629880'
+app/views/expenses/_form.html.erb:4:in `_app_views_expenses__form_html_erb__2350005345014650193_69845865629880'
+app/views/expenses/new.js.erb:1:in `_app_views_expenses_new_js_erb__1785271460632078390_69845865707800'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.3ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.4ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb (20.6ms)
+Started GET "/expenses" for 127.0.0.1 at 2019-08-10 15:34:03 -0500
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered expenses/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 185ms (Views: 180.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:34:04 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (15.2ms)
+  Rendered expenses/new.js.erb (24.1ms)
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `empty?' for nil:NilClass):
+    12:             <div class="col-sm-6">
+    13:               <div class="form-group">
+    14:                 <%= f.label :Type %>
+    15:                 <%= f.select :type %>
+    16:               </div>
+    17:             </div>
+    18:             <div class="col-sm-6">
+  
+app/views/expenses/_form.html.erb:15:in `block in _app_views_expenses__form_html_erb__2350005345014650193_69845983939600'
+app/views/expenses/_form.html.erb:4:in `_app_views_expenses__form_html_erb__2350005345014650193_69845983939600'
+app/views/expenses/new.js.erb:1:in `_app_views_expenses_new_js_erb__1785271460632078390_69845983809300'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.1ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (2.4ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb (21.0ms)
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:34:05 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (9.0ms)
+  Rendered expenses/new.js.erb (14.9ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `empty?' for nil:NilClass):
+    12:             <div class="col-sm-6">
+    13:               <div class="form-group">
+    14:                 <%= f.label :Type %>
+    15:                 <%= f.select :type %>
+    16:               </div>
+    17:             </div>
+    18:             <div class="col-sm-6">
+  
+app/views/expenses/_form.html.erb:15:in `block in _app_views_expenses__form_html_erb__2350005345014650193_69845983554060'
+app/views/expenses/_form.html.erb:4:in `_app_views_expenses__form_html_erb__2350005345014650193_69845983554060'
+app/views/expenses/new.js.erb:1:in `_app_views_expenses_new_js_erb__1785271460632078390_69845983211340'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.2ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.4ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb (17.5ms)
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:34:06 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (8.5ms)
+  Rendered expenses/new.js.erb (14.8ms)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `empty?' for nil:NilClass):
+    12:             <div class="col-sm-6">
+    13:               <div class="form-group">
+    14:                 <%= f.label :Type %>
+    15:                 <%= f.select :type %>
+    16:               </div>
+    17:             </div>
+    18:             <div class="col-sm-6">
+  
+app/views/expenses/_form.html.erb:15:in `block in _app_views_expenses__form_html_erb__2350005345014650193_69845980700480'
+app/views/expenses/_form.html.erb:4:in `_app_views_expenses__form_html_erb__2350005345014650193_69845980700480'
+app/views/expenses/new.js.erb:1:in `_app_views_expenses_new_js_erb__1785271460632078390_69845980723660'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.0ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.3ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb (17.0ms)
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:34:06 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (10.3ms)
+  Rendered expenses/new.js.erb (17.7ms)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `empty?' for nil:NilClass):
+    12:             <div class="col-sm-6">
+    13:               <div class="form-group">
+    14:                 <%= f.label :Type %>
+    15:                 <%= f.select :type %>
+    16:               </div>
+    17:             </div>
+    18:             <div class="col-sm-6">
+  
+app/views/expenses/_form.html.erb:15:in `block in _app_views_expenses__form_html_erb__2350005345014650193_69845934519320'
+app/views/expenses/_form.html.erb:4:in `_app_views_expenses__form_html_erb__2350005345014650193_69845934519320'
+app/views/expenses/new.js.erb:1:in `_app_views_expenses_new_js_erb__1785271460632078390_69845934427720'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.4ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.7ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb (20.6ms)
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:34:06 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (9.4ms)
+  Rendered expenses/new.js.erb (16.0ms)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `empty?' for nil:NilClass):
+    12:             <div class="col-sm-6">
+    13:               <div class="form-group">
+    14:                 <%= f.label :Type %>
+    15:                 <%= f.select :type %>
+    16:               </div>
+    17:             </div>
+    18:             <div class="col-sm-6">
+  
+app/views/expenses/_form.html.erb:15:in `block in _app_views_expenses__form_html_erb__2350005345014650193_69845982708040'
+app/views/expenses/_form.html.erb:4:in `_app_views_expenses__form_html_erb__2350005345014650193_69845982708040'
+app/views/expenses/new.js.erb:1:in `_app_views_expenses_new_js_erb__1785271460632078390_69845982731240'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.4ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.1ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb (22.0ms)
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:34:06 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (11.4ms)
+  Rendered expenses/new.js.erb (18.6ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `empty?' for nil:NilClass):
+    12:             <div class="col-sm-6">
+    13:               <div class="form-group">
+    14:                 <%= f.label :Type %>
+    15:                 <%= f.select :type %>
+    16:               </div>
+    17:             </div>
+    18:             <div class="col-sm-6">
+  
+app/views/expenses/_form.html.erb:15:in `block in _app_views_expenses__form_html_erb__2350005345014650193_69845983002240'
+app/views/expenses/_form.html.erb:4:in `_app_views_expenses__form_html_erb__2350005345014650193_69845983002240'
+app/views/expenses/new.js.erb:1:in `_app_views_expenses_new_js_erb__1785271460632078390_69845983528600'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.3ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.8ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb (20.4ms)
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:34:07 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (8.9ms)
+  Rendered expenses/new.js.erb (15.5ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `empty?' for nil:NilClass):
+    12:             <div class="col-sm-6">
+    13:               <div class="form-group">
+    14:                 <%= f.label :Type %>
+    15:                 <%= f.select :type %>
+    16:               </div>
+    17:             </div>
+    18:             <div class="col-sm-6">
+  
+app/views/expenses/_form.html.erb:15:in `block in _app_views_expenses__form_html_erb__2350005345014650193_69845970335600'
+app/views/expenses/_form.html.erb:4:in `_app_views_expenses__form_html_erb__2350005345014650193_69845970335600'
+app/views/expenses/new.js.erb:1:in `_app_views_expenses_new_js_erb__1785271460632078390_69845983408680'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.1ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.2ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb (16.8ms)
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:34:07 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (13.4ms)
+  Rendered expenses/new.js.erb (20.1ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `empty?' for nil:NilClass):
+    12:             <div class="col-sm-6">
+    13:               <div class="form-group">
+    14:                 <%= f.label :Type %>
+    15:                 <%= f.select :type %>
+    16:               </div>
+    17:             </div>
+    18:             <div class="col-sm-6">
+  
+app/views/expenses/_form.html.erb:15:in `block in _app_views_expenses__form_html_erb__2350005345014650193_69845977542420'
+app/views/expenses/_form.html.erb:4:in `_app_views_expenses__form_html_erb__2350005345014650193_69845977542420'
+app/views/expenses/new.js.erb:1:in `_app_views_expenses_new_js_erb__1785271460632078390_69845977832360'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.3ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.1ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb (18.8ms)
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:34:07 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (10.2ms)
+  Rendered expenses/new.js.erb (17.2ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `empty?' for nil:NilClass):
+    12:             <div class="col-sm-6">
+    13:               <div class="form-group">
+    14:                 <%= f.label :Type %>
+    15:                 <%= f.select :type %>
+    16:               </div>
+    17:             </div>
+    18:             <div class="col-sm-6">
+  
+app/views/expenses/_form.html.erb:15:in `block in _app_views_expenses__form_html_erb__2350005345014650193_69845937524960'
+app/views/expenses/_form.html.erb:4:in `_app_views_expenses__form_html_erb__2350005345014650193_69845937524960'
+app/views/expenses/new.js.erb:1:in `_app_views_expenses_new_js_erb__1785271460632078390_69845937572760'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.4ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.5ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb (22.1ms)
+Started GET "/expenses" for 127.0.0.1 at 2019-08-10 15:34:18 -0500
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered expenses/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 108ms (Views: 105.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:34:19 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (5.6ms)
+  Rendered expenses/new.js.erb (13.3ms)
+Completed 200 OK in 31ms (Views: 23.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/expenses" for 127.0.0.1 at 2019-08-10 15:34:29 -0500
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered expenses/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 97ms (Views: 94.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:34:30 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (3.8ms)
+  Rendered expenses/new.js.erb (11.1ms)
+Completed 200 OK in 27ms (Views: 20.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/expenses" for 127.0.0.1 at 2019-08-10 15:34:48 -0500
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered expenses/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 93ms (Views: 88.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:34:49 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (3.6ms)
+  Rendered expenses/new.js.erb (10.3ms)
+Completed 200 OK in 27ms (Views: 18.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/expenses" for 127.0.0.1 at 2019-08-10 15:38:19 -0500
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered expenses/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 94ms (Views: 91.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:38:21 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (3.1ms)
+  Rendered expenses/new.js.erb (9.8ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/_form.html.erb:15: syntax error, unexpected ')', expecting ']'
+...Type.all {|t| [t.name, t-id] }),  class: "form-control", pla...
+...                              ^
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/_form.html.erb:15: syntax error, unexpected ',', expecting ')'
+...id] }),  class: "form-control", placeholder: "Ingrese un nue...
+...                              ^):
+  
+app/views/expenses/_form.html.erb:15: syntax error, unexpected ')', expecting ']'
+app/views/expenses/_form.html.erb:15: syntax error, unexpected ',', expecting ')'
+app/views/expenses/new.js.erb:1:in `_app_views_expenses_new_js_erb__1785271460632078390_69845980320660'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.text.erb (1.2ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.5ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.5ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (30.2ms)
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:38:23 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (1.5ms)
+  Rendered expenses/new.js.erb (8.0ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/_form.html.erb:15: syntax error, unexpected ')', expecting ']'
+...Type.all {|t| [t.name, t-id] }),  class: "form-control", pla...
+...                              ^
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/_form.html.erb:15: syntax error, unexpected ',', expecting ')'
+...id] }),  class: "form-control", placeholder: "Ingrese un nue...
+...                              ^):
+  
+app/views/expenses/_form.html.erb:15: syntax error, unexpected ')', expecting ']'
+app/views/expenses/_form.html.erb:15: syntax error, unexpected ',', expecting ')'
+app/views/expenses/new.js.erb:1:in `_app_views_expenses_new_js_erb__1785271460632078390_69845937829620'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.text.erb (0.8ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.0ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.3ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (24.8ms)
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:38:23 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  Rendered expenses/_form.html.erb (2.0ms)
+  Rendered expenses/new.js.erb (9.1ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/_form.html.erb:15: syntax error, unexpected ')', expecting ']'
+...Type.all {|t| [t.name, t-id] }),  class: "form-control", pla...
+...                              ^
+/home/sebastian/Desktop/Make It Real/rails2/proyectoexpensify/app/views/expenses/_form.html.erb:15: syntax error, unexpected ',', expecting ')'
+...id] }),  class: "form-control", placeholder: "Ingrese un nue...
+...                              ^):
+  
+app/views/expenses/_form.html.erb:15: syntax error, unexpected ')', expecting ']'
+app/views/expenses/_form.html.erb:15: syntax error, unexpected ',', expecting ')'
+app/views/expenses/new.js.erb:1:in `_app_views_expenses_new_js_erb__1785271460632078390_69845969315040'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.text.erb (0.9ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.5ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.5ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (26.1ms)
+Started GET "/expenses" for 127.0.0.1 at 2019-08-10 15:39:05 -0500
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered expenses/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 108ms (Views: 106.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:39:06 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  [1m[36mType Load (0.3ms)[0m  [1m[34mSELECT "types".* FROM "types"[0m
+  Rendered expenses/_form.html.erb (8.8ms)
+  Rendered expenses/new.js.erb (15.9ms)
+Completed 200 OK in 32ms (Views: 23.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/expenses" for 127.0.0.1 at 2019-08-10 15:39:21 -0500
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered expenses/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 92ms (Views: 89.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/expenses" for 127.0.0.1 at 2019-08-10 15:39:22 -0500
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered expenses/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 106ms (Views: 103.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:39:25 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  [1m[36mType Load (0.3ms)[0m  [1m[34mSELECT "types".* FROM "types"[0m
+  Rendered expenses/_form.html.erb (6.1ms)
+  Rendered expenses/new.js.erb (14.6ms)
+Completed 200 OK in 34ms (Views: 24.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/expenses" for 127.0.0.1 at 2019-08-10 15:39:42 -0500
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered expenses/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 111ms (Views: 108.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:39:43 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT "types".* FROM "types"[0m
+  Rendered expenses/_form.html.erb (5.2ms)
+  Rendered expenses/new.js.erb (13.0ms)
+Completed 200 OK in 31ms (Views: 22.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/expenses" for 127.0.0.1 at 2019-08-10 15:41:58 -0500
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered expenses/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 102ms (Views: 99.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:42:00 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  [1m[36mType Load (0.9ms)[0m  [1m[34mSELECT "types".* FROM "types"[0m
+  Rendered expenses/_form.html.erb (10.7ms)
+  Rendered expenses/new.js.erb (18.7ms)
+Completed 200 OK in 43ms (Views: 32.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:44:08 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT "types".* FROM "types"[0m
+  Rendered expenses/_form.html.erb (7.6ms)
+  Rendered expenses/new.js.erb (17.4ms)
+Completed 200 OK in 36ms (Views: 29.7ms | ActiveRecord: 0.2ms)
+
+
+  [1m[36mType Load (1.8ms)[0m  [1m[34mSELECT "types".* FROM "types"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "types" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Purchase"], ["created_at", "2019-08-10 20:45:58.421887"], ["updated_at", "2019-08-10 20:45:58.421887"]]
+  [1m[35m (89.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "types" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Withdraw"], ["created_at", "2019-08-10 20:45:58.515674"], ["updated_at", "2019-08-10 20:45:58.515674"]]
+  [1m[35m (108.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "types" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Transfer"], ["created_at", "2019-08-10 20:45:58.627202"], ["updated_at", "2019-08-10 20:45:58.627202"]]
+  [1m[35m (110.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "types" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Payment"], ["created_at", "2019-08-10 20:45:58.741331"], ["updated_at", "2019-08-10 20:45:58.741331"]]
+  [1m[35m (114.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mType Load (1.7ms)[0m  [1m[34mSELECT "types".* FROM "types"[0m
+Started GET "/expenses" for 127.0.0.1 at 2019-08-10 15:46:31 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered expenses/index.html.erb within layouts/application (33.9ms)
+Completed 200 OK in 557ms (Views: 536.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:46:33 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  [1m[36mType Load (0.5ms)[0m  [1m[34mSELECT "types".* FROM "types"[0m
+  Rendered expenses/_form.html.erb (108.2ms)
+  Rendered expenses/new.js.erb (117.3ms)
+Completed 200 OK in 150ms (Views: 123.7ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/expenses" for 127.0.0.1 at 2019-08-10 15:50:43 -0500
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered expenses/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 123ms (Views: 118.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:50:44 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  [1m[36mType Load (0.3ms)[0m  [1m[34mSELECT "types".* FROM "types"[0m
+  Rendered expenses/_form.html.erb (8.8ms)
+  Rendered expenses/new.js.erb (18.7ms)
+Completed 200 OK in 38ms (Views: 28.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:52:50 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  [1m[36mType Load (0.3ms)[0m  [1m[34mSELECT "types".* FROM "types"[0m
+  Rendered expenses/_form.html.erb (7.2ms)
+  Rendered expenses/new.js.erb (14.4ms)
+Completed 200 OK in 31ms (Views: 23.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/expenses" for 127.0.0.1 at 2019-08-10 15:53:45 -0500
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered expenses/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 190ms (Views: 186.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:53:46 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  [1m[36mType Load (0.3ms)[0m  [1m[34mSELECT "types".* FROM "types"[0m
+  Rendered expenses/_form.html.erb (10.6ms)
+  Rendered expenses/new.js.erb (20.3ms)
+Completed 200 OK in 41ms (Views: 32.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/expenses" for 127.0.0.1 at 2019-08-10 15:54:22 -0500
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered expenses/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 161ms (Views: 158.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:54:23 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  [1m[36mType Load (0.9ms)[0m  [1m[34mSELECT "types".* FROM "types"[0m
+  Rendered expenses/_form.html.erb (9.3ms)
+  Rendered expenses/new.js.erb (19.7ms)
+Completed 200 OK in 37ms (Views: 29.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/expenses" for 127.0.0.1 at 2019-08-10 15:54:49 -0500
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered expenses/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 114ms (Views: 111.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:54:50 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  [1m[36mType Load (0.3ms)[0m  [1m[34mSELECT "types".* FROM "types"[0m
+  Rendered expenses/_form.html.erb (10.8ms)
+  Rendered expenses/new.js.erb (20.3ms)
+Completed 200 OK in 41ms (Views: 31.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/expenses" for 127.0.0.1 at 2019-08-10 15:55:06 -0500
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered expenses/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 126ms (Views: 122.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:55:07 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  [1m[36mType Load (0.6ms)[0m  [1m[34mSELECT "types".* FROM "types"[0m
+  Rendered expenses/_form.html.erb (9.5ms)
+  Rendered expenses/new.js.erb (18.3ms)
+Completed 200 OK in 37ms (Views: 27.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/expenses" for 127.0.0.1 at 2019-08-10 15:55:37 -0500
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered expenses/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 125ms (Views: 122.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:55:38 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT "types".* FROM "types"[0m
+  Rendered expenses/_form.html.erb (6.1ms)
+  Rendered expenses/new.js.erb (14.3ms)
+Completed 200 OK in 36ms (Views: 26.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/expenses" for 127.0.0.1 at 2019-08-10 15:56:06 -0500
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered expenses/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 135ms (Views: 132.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:56:08 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  [1m[36mType Load (0.5ms)[0m  [1m[34mSELECT "types".* FROM "types"[0m
+  Rendered expenses/_form.html.erb (8.8ms)
+  Rendered expenses/new.js.erb (18.1ms)
+Completed 200 OK in 38ms (Views: 30.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/expenses" for 127.0.0.1 at 2019-08-10 15:56:52 -0500
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.9ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered expenses/index.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 122ms (Views: 119.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 15:56:53 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT "types".* FROM "types"[0m
+  Rendered expenses/_form.html.erb (6.3ms)
+  Rendered expenses/new.js.erb (14.9ms)
+Completed 200 OK in 36ms (Views: 26.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/expenses" for 127.0.0.1 at 2019-08-10 16:18:04 -0500
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mCategory Load (22.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered expenses/index.html.erb within layouts/application (109.6ms)
+Completed 200 OK in 667ms (Views: 507.8ms | ActiveRecord: 22.5ms)
+
+
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 16:18:09 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  [1m[36mType Load (20.4ms)[0m  [1m[34mSELECT "types".* FROM "types" ORDER BY "types"."name" ASC[0m
+  Rendered expenses/_form.html.erb (788.5ms)
+  Rendered expenses/new.js.erb (800.8ms)
+Completed 200 OK in 827ms (Views: 792.2ms | ActiveRecord: 20.4ms)
+
+
+Started GET "/expenses" for 127.0.0.1 at 2019-08-10 16:18:25 -0500
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mCategory Load (1.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered expenses/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 133ms (Views: 130.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/expenses" for 127.0.0.1 at 2019-08-10 16:21:11 -0500
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered expenses/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 120ms (Views: 118.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 16:21:12 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  [1m[36mType Load (0.4ms)[0m  [1m[34mSELECT "types".* FROM "types" ORDER BY "types"."name" ASC[0m
+  Rendered expenses/_form.html.erb (32.1ms)
+  Rendered expenses/new.js.erb (41.4ms)
+Completed 200 OK in 59ms (Views: 51.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 16:23:47 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  [1m[36mType Load (0.4ms)[0m  [1m[34mSELECT "types".* FROM "types" ORDER BY "types"."name" ASC[0m
+  Rendered expenses/_form.html.erb (11.3ms)
+  Rendered expenses/new.js.erb (19.5ms)
+Completed 200 OK in 38ms (Views: 30.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 16:25:31 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  [1m[36mType Load (0.4ms)[0m  [1m[34mSELECT "types".* FROM "types" ORDER BY "types"."name" ASC[0m
+  Rendered expenses/_form.html.erb (6.8ms)
+  Rendered expenses/new.js.erb (13.8ms)
+Completed 200 OK in 32ms (Views: 23.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/expenses" for 127.0.0.1 at 2019-08-10 16:28:52 -0500
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered expenses/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 130ms (Views: 127.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 16:28:53 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  [1m[36mType Load (0.6ms)[0m  [1m[34mSELECT "types".* FROM "types" ORDER BY "types"."name" ASC[0m
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" ORDER BY "categories"."name" ASC[0m
+  Rendered expenses/_form.html.erb (27.1ms)
+  Rendered expenses/new.js.erb (36.0ms)
+Completed 200 OK in 56ms (Views: 45.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/expenses" for 127.0.0.1 at 2019-08-10 16:37:58 -0500
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered expenses/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 134ms (Views: 131.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 16:37:59 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  [1m[36mType Load (0.3ms)[0m  [1m[34mSELECT "types".* FROM "types" ORDER BY "types"."name" ASC[0m
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" ORDER BY "categories"."name" ASC[0m
+  Rendered expenses/_form.html.erb (93.9ms)
+  Rendered expenses/new.js.erb (101.5ms)
+Completed 500 Internal Server Error in 122ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `amounth' for #<Expense:0x00007fc0bcb4bdb8>
+Did you mean?  amount
+               amount?
+               amount=):
+    43:             <div class="col-sm-6">
+    44:               <div class="form-group">
+    45:                 <%= f.label :Amounth %>
+    46:                 <%= f.text_field :amounth,  class: "form-control", placeholder: "Ingrese el monto del gasto" %>
+    47:               </div>
+    48:             </div>
+    49:           </div>
+  
+app/views/expenses/_form.html.erb:46:in `block in _app_views_expenses__form_html_erb___452077414864871087_70232887643340'
+app/views/expenses/_form.html.erb:4:in `_app_views_expenses__form_html_erb___452077414864871087_70232887643340'
+app/views/expenses/new.js.erb:1:in `_app_views_expenses_new_js_erb__1255159439242894935_70232888157820'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.8ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.2ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb (26.2ms)
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 16:38:01 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  [1m[36mType Load (0.4ms)[0m  [1m[34mSELECT "types".* FROM "types" ORDER BY "types"."name" ASC[0m
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" ORDER BY "categories"."name" ASC[0m
+  Rendered expenses/_form.html.erb (27.8ms)
+  Rendered expenses/new.js.erb (35.2ms)
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `amounth' for #<Expense:0x00007fc0b401f348>
+Did you mean?  amount
+               amount?
+               amount=):
+    43:             <div class="col-sm-6">
+    44:               <div class="form-group">
+    45:                 <%= f.label :Amounth %>
+    46:                 <%= f.text_field :amounth,  class: "form-control", placeholder: "Ingrese el monto del gasto" %>
+    47:               </div>
+    48:             </div>
+    49:           </div>
+  
+app/views/expenses/_form.html.erb:46:in `block in _app_views_expenses__form_html_erb___452077414864871087_70232900418700'
+app/views/expenses/_form.html.erb:4:in `_app_views_expenses__form_html_erb___452077414864871087_70232900418700'
+app/views/expenses/new.js.erb:1:in `_app_views_expenses_new_js_erb__1255159439242894935_70232815233280'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.3ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.5ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb (19.8ms)
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 16:38:01 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  [1m[36mType Load (0.3ms)[0m  [1m[34mSELECT "types".* FROM "types" ORDER BY "types"."name" ASC[0m
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" ORDER BY "categories"."name" ASC[0m
+  Rendered expenses/_form.html.erb (33.1ms)
+  Rendered expenses/new.js.erb (41.6ms)
+Completed 500 Internal Server Error in 63ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `amounth' for #<Expense:0x00007fc0bdb25130>
+Did you mean?  amount
+               amount?
+               amount=):
+    43:             <div class="col-sm-6">
+    44:               <div class="form-group">
+    45:                 <%= f.label :Amounth %>
+    46:                 <%= f.text_field :amounth,  class: "form-control", placeholder: "Ingrese el monto del gasto" %>
+    47:               </div>
+    48:             </div>
+    49:           </div>
+  
+app/views/expenses/_form.html.erb:46:in `block in _app_views_expenses__form_html_erb___452077414864871087_70232896446020'
+app/views/expenses/_form.html.erb:4:in `_app_views_expenses__form_html_erb___452077414864871087_70232896446020'
+app/views/expenses/new.js.erb:1:in `_app_views_expenses_new_js_erb__1255159439242894935_70232896510540'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.3ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.7ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb (21.0ms)
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 16:38:02 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  [1m[36mType Load (0.3ms)[0m  [1m[34mSELECT "types".* FROM "types" ORDER BY "types"."name" ASC[0m
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" ORDER BY "categories"."name" ASC[0m
+  Rendered expenses/_form.html.erb (28.3ms)
+  Rendered expenses/new.js.erb (37.9ms)
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `amounth' for #<Expense:0x00007fc0bcf29890>
+Did you mean?  amount
+               amount?
+               amount=):
+    43:             <div class="col-sm-6">
+    44:               <div class="form-group">
+    45:                 <%= f.label :Amounth %>
+    46:                 <%= f.text_field :amounth,  class: "form-control", placeholder: "Ingrese el monto del gasto" %>
+    47:               </div>
+    48:             </div>
+    49:           </div>
+  
+app/views/expenses/_form.html.erb:46:in `block in _app_views_expenses__form_html_erb___452077414864871087_70232889729640'
+app/views/expenses/_form.html.erb:4:in `_app_views_expenses__form_html_erb___452077414864871087_70232889729640'
+app/views/expenses/new.js.erb:1:in `_app_views_expenses_new_js_erb__1255159439242894935_70232890158840'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.4ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.7ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb (23.7ms)
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 16:38:02 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  [1m[36mType Load (0.2ms)[0m  [1m[34mSELECT "types".* FROM "types" ORDER BY "types"."name" ASC[0m
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" ORDER BY "categories"."name" ASC[0m
+  Rendered expenses/_form.html.erb (29.8ms)
+  Rendered expenses/new.js.erb (37.1ms)
+Completed 500 Internal Server Error in 56ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `amounth' for #<Expense:0x00007fc0b4081868>
+Did you mean?  amount
+               amount?
+               amount=):
+    43:             <div class="col-sm-6">
+    44:               <div class="form-group">
+    45:                 <%= f.label :Amounth %>
+    46:                 <%= f.text_field :amounth,  class: "form-control", placeholder: "Ingrese el monto del gasto" %>
+    47:               </div>
+    48:             </div>
+    49:           </div>
+  
+app/views/expenses/_form.html.erb:46:in `block in _app_views_expenses__form_html_erb___452077414864871087_70232815309200'
+app/views/expenses/_form.html.erb:4:in `_app_views_expenses__form_html_erb___452077414864871087_70232815309200'
+app/views/expenses/new.js.erb:1:in `_app_views_expenses_new_js_erb__1255159439242894935_70232815417580'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.1ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.8ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb (20.7ms)
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 16:38:02 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  [1m[36mType Load (0.3ms)[0m  [1m[34mSELECT "types".* FROM "types" ORDER BY "types"."name" ASC[0m
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" ORDER BY "categories"."name" ASC[0m
+  Rendered expenses/_form.html.erb (28.6ms)
+  Rendered expenses/new.js.erb (36.4ms)
+Completed 500 Internal Server Error in 56ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `amounth' for #<Expense:0x00007fc0bda30d60>
+Did you mean?  amount
+               amount?
+               amount=):
+    43:             <div class="col-sm-6">
+    44:               <div class="form-group">
+    45:                 <%= f.label :Amounth %>
+    46:                 <%= f.text_field :amounth,  class: "form-control", placeholder: "Ingrese el monto del gasto" %>
+    47:               </div>
+    48:             </div>
+    49:           </div>
+  
+app/views/expenses/_form.html.erb:46:in `block in _app_views_expenses__form_html_erb___452077414864871087_70232895583140'
+app/views/expenses/_form.html.erb:4:in `_app_views_expenses__form_html_erb___452077414864871087_70232895583140'
+app/views/expenses/new.js.erb:1:in `_app_views_expenses_new_js_erb__1255159439242894935_70232895665980'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.4ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.8ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb (22.6ms)
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 16:38:03 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  [1m[36mType Load (0.4ms)[0m  [1m[34mSELECT "types".* FROM "types" ORDER BY "types"."name" ASC[0m
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" ORDER BY "categories"."name" ASC[0m
+  Rendered expenses/_form.html.erb (34.1ms)
+  Rendered expenses/new.js.erb (42.3ms)
+Completed 500 Internal Server Error in 58ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `amounth' for #<Expense:0x00007fc0bc91ad00>
+Did you mean?  amount
+               amount?
+               amount=):
+    43:             <div class="col-sm-6">
+    44:               <div class="form-group">
+    45:                 <%= f.label :Amounth %>
+    46:                 <%= f.text_field :amounth,  class: "form-control", placeholder: "Ingrese el monto del gasto" %>
+    47:               </div>
+    48:             </div>
+    49:           </div>
+  
+app/views/expenses/_form.html.erb:46:in `block in _app_views_expenses__form_html_erb___452077414864871087_70232886428580'
+app/views/expenses/_form.html.erb:4:in `_app_views_expenses__form_html_erb___452077414864871087_70232886428580'
+app/views/expenses/new.js.erb:1:in `_app_views_expenses_new_js_erb__1255159439242894935_70232886981120'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.4ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.4ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb (23.0ms)
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 16:38:03 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  [1m[36mType Load (0.3ms)[0m  [1m[34mSELECT "types".* FROM "types" ORDER BY "types"."name" ASC[0m
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" ORDER BY "categories"."name" ASC[0m
+  Rendered expenses/_form.html.erb (29.1ms)
+  Rendered expenses/new.js.erb (35.9ms)
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `amounth' for #<Expense:0x00007fc0be1cf5a8>
+Did you mean?  amount
+               amount?
+               amount=):
+    43:             <div class="col-sm-6">
+    44:               <div class="form-group">
+    45:                 <%= f.label :Amounth %>
+    46:                 <%= f.text_field :amounth,  class: "form-control", placeholder: "Ingrese el monto del gasto" %>
+    47:               </div>
+    48:             </div>
+    49:           </div>
+  
+app/views/expenses/_form.html.erb:46:in `block in _app_views_expenses__form_html_erb___452077414864871087_70232899956000'
+app/views/expenses/_form.html.erb:4:in `_app_views_expenses__form_html_erb___452077414864871087_70232899956000'
+app/views/expenses/new.js.erb:1:in `_app_views_expenses_new_js_erb__1255159439242894935_70232900004700'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.3ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (2.1ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb (24.2ms)
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 16:38:03 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  [1m[36mType Load (0.4ms)[0m  [1m[34mSELECT "types".* FROM "types" ORDER BY "types"."name" ASC[0m
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" ORDER BY "categories"."name" ASC[0m
+  Rendered expenses/_form.html.erb (38.8ms)
+  Rendered expenses/new.js.erb (48.0ms)
+Completed 500 Internal Server Error in 76ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `amounth' for #<Expense:0x00007fc0bd5a5430>
+Did you mean?  amount
+               amount?
+               amount=):
+    43:             <div class="col-sm-6">
+    44:               <div class="form-group">
+    45:                 <%= f.label :Amounth %>
+    46:                 <%= f.text_field :amounth,  class: "form-control", placeholder: "Ingrese el monto del gasto" %>
+    47:               </div>
+    48:             </div>
+    49:           </div>
+  
+app/views/expenses/_form.html.erb:46:in `block in _app_views_expenses__form_html_erb___452077414864871087_70232893440740'
+app/views/expenses/_form.html.erb:4:in `_app_views_expenses__form_html_erb___452077414864871087_70232893440740'
+app/views/expenses/new.js.erb:1:in `_app_views_expenses_new_js_erb__1255159439242894935_70232893605840'
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.3ms)
+  Rendering /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.2ms)
+  Rendered /var/lib/gems/2.5.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.text.erb (17.4ms)
+Started GET "/expenses" for 127.0.0.1 at 2019-08-10 16:40:47 -0500
+Processing by ExpensesController#index as HTML
+  Rendering expenses/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered expenses/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 133ms (Views: 129.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/expenses/new" for 127.0.0.1 at 2019-08-10 16:40:49 -0500
+Processing by ExpensesController#new as JS
+  Rendering expenses/new.js.erb
+  [1m[36mType Load (0.3ms)[0m  [1m[34mSELECT "types".* FROM "types" ORDER BY "types"."name" ASC[0m
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" ORDER BY "categories"."name" ASC[0m
+  Rendered expenses/_form.html.erb (8.1ms)
+  Rendered expenses/new.js.erb (16.2ms)
+Completed 200 OK in 35ms (Views: 25.8ms | ActiveRecord: 0.5ms)
+
+
