@@ -10,7 +10,7 @@ before_action :set_category, only: %i[show update edit destroy]
   end
 
   def create
-      
+    @category = Category.new(category_params)
       if @category.save
         redirect_to categories_path
         flash[:notice] = "Categoria creada satisfactoriamente"        
